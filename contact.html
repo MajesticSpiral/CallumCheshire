@@ -4,19 +4,59 @@
 <html>
 
 <head>
-    <link rel="stylesheet" a href="mystyles.css">
+        <link rel="stylesheet" a href="mystyles.css">
 
-
-	<title> Callum Cheshire | Contact</title>
-
-
-
+    <title> Callum Cheshire | Contact</title>
+    
 	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-<body>
 
+<style>
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {
+
+    float: left;
+}
+
+</style>
+<body>
+    
 	<header class="main-header">
 
 
@@ -34,18 +74,44 @@
 
 	<section class="primary-section t-border">
 
-            <b>Contact me </b>
-    
-            <p class="intro">
-                You can find me on these social media links <a href="https://www.facebook.com/callum.cheshire2">Facebook</a>, <a href="https://twitter.com/StCheshire">Twitter</a>, <a href="https://www.linkedin.com/in/callum-cheshire-50978a172/">Linkedin</a>
-                Or you can reach me via gmail: cheshirecallum@gmail.com.
-            </p>
-        </section>
+		<b>Contact me </b>
 
-        <footer class="main-footer">
-            <p>All rights reserved to <a href="#">Callum Cheshire</a>.</p>
-            <a href="#top">Back to top »</a>
-        </footer>
+		<p class="intro">
+            If you wish to contact me use my email address <a href="#">cheshirecallum@gmail.com</a>
+        
+        </p>
+        
+       
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+          
+              
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
 
+	</section>
+
+    <footer class="main-footer">
+        <p>All rights reserved to <a href="#">Callum Cheshire</a>.</p>
+        <a href="#top">Back to top »</a>
+    </footer>
 </body>
+
+
+
 </html>
