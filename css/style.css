@@ -740,6 +740,7 @@ h3.heading-section:before {
   -ms-border-radius: 0px;
   border-radius: 0px;
 }
+
 #fh5co-contact .form-control:focus, #fh5co-contact .form-control:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
@@ -751,7 +752,7 @@ h3.heading-section:before {
 }
 
 .fh5co-testimonial {
-  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: grey 1px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-testimonial {
@@ -810,11 +811,10 @@ h3.heading-section:before {
 }
 
 #fh5co-blog-section, #fh5co-start-project-section {
-  background: #184bde;
   padding: 5em 0;
 }
 #fh5co-blog-section h3.heading-section, #fh5co-start-project-section h3.heading-section {
-  color: #fff;
+  color: #5a5a5a;
 }
 #fh5co-blog-section p, #fh5co-start-project-section p {
   color: rgba(255, 255, 255, 0.7);
