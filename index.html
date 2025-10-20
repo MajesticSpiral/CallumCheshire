@@ -1,323 +1,391 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Callum Cheshire | Home </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title> Callum Cheshire | Home </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+<meta property="og:title" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content=""/>
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
 
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Superfish -->
-	<link rel="stylesheet" href="css/superfish.css">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="favicon.ico">
 
-	<link rel="stylesheet" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Superfish -->
+<link rel="stylesheet" href="css/superfish.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<style>
+/* Featured Projects - overlay text improvements */
+.fh5co-grid {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 400px; /* keep bigger height */
+}
+.fh5co-grid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.overlay-link {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); /* slightly darker overlay for better contrast */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff; /* force white text */
+  flex-direction: column;
+  padding: 15px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* subtle shadow for readability */
+}
+.fh5co-grid:hover .overlay-link {
+  opacity: 1;
+}
+
+.prod-title h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff; /* always white */
+}
+.prod-title span {
+  font-size: 1.1em;
+  display: block;
+  margin-top: 5px;
+  color: #fff; /* always white */
+}
+.overlay-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 4px;
+  color: #fff; /* button text white */
+  transition: all 0.3s ease;
+}
+.overlay-btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
 
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
-	</head>
-	<body>
-		<div id="fh5co-wrapper">
-		<div id="fh5co-page">
-		<div id="fh5co-header">
-			<div class="top">
-				<div class="container">
-					<span> <a href="#">cheshirecallum@gmail.com</a></span>
-					<span> <a href="tel://+12345678910"><i class="icon-mobile3"></i> 07815775901</a></span>
-				</div>
-			</div>
-			<!-- end:top -->
-			<header id="fh5co-header-section">
-				<div class="container">
-					<div class="nav-header">
-						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html">Callum Cheshire Portfolio</a></h1>
-						<!-- START #fh5co-menu-wrap -->
-					<nav id="fh5co-menu-wrap" role="navigation">
-						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="active">
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="portfolio.html">Portfolio</a>
-							</li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-					</div>
-				</div>
-			</header>
-			
-		</div>
-		
+</style>
 
-		<div class="fh5co-hero">
-			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" style="background-image: url(images/coding.jpg);">
-				<div class="desc animate-box">
-					<h2>Callum Cheshire</h2>
-					<span>An aspiring web developer who has a passion for coding</span>
-				</div>
-			</div>
-
-		</div>
-		<!-- end:header-top -->
-		<div id="fh5co-work-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 animate-box">
-						<h3 class="heading-section">Featured Projects</h3>
-						<p>Some of my best work</p>
-					</div>
-					<div class="col-md-9">
-						<div class="row">
-							<div class="col-md-8 col-sm-8">
-								<div class="fh5co-grid animate-box" style="background-image: url(images/logo-bg.jpg);">
-									<a class="image-popup text-center" href="https://majesticspiral.github.io/BarberShopSFTW/" target="_blank">
-										<div class="prod-title">
-											<h3>S.F.T.W</h3>
-											<span>Barber Shop</span>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-8 col-sm-8">
-								<div class="fh5co-grid animate-box" style="background-image: url(images/restaurant.jfif);">
-									<a class="image-popup text-center" href="https://majesticspiral.github.io/DrunkenBunkerRestaurant/index.html" target="_blank">
-										<div class="prod-title">
-											<h3>Drunken Bunker</h3>
-											<span>Cocktail & Food restaurant</span>
-										</div>
-									</a>
-								</div>
-							</div>
-
-									<div class="col-md-8 col-sm-8">
-								<div class="fh5co-grid animate-box" style="background-image: url(images/finesse.jpg);">
-									<a class="image-popup text-center" href="https://majesticspiral.github.io/Finesse/index.html" target="_blank">
-										<div class="prod-title">
-											<h3>Finesse Worktops</h3>
-											<span>Worktops & Decors</span>
-										</div>
-									</a>
-								</div>
-							</div>
-
-										<div class="col-md-8 col-sm-8">
-								<div class="fh5co-grid animate-box" style="background-image: url(images/studioworktops.png);">
-									<a class="image-popup text-center" href="https://majesticspiral.github.io/Studioworktops" target="_blank">
-										<div class="prod-title">
-											<h3>Studio Worktops</h3>
-											<span>Decor Samples & Designs</span>
-										</div>
-									</a>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-<!-- fh5co-work-section -->
-<div id="fh5co-services-section" class="border-bottom">
+</head>
+<body>
+<div id="fh5co-wrapper">
+<div id="fh5co-page">
+<div id="fh5co-header">
+  <div class="top">
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 animate-box">
-                <h3 class="heading-section">What I Can Offer</h3>
-                <p>Explore the professional services I provide to help your business or project succeed.</p>
-            </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-browser"></i></span>
-                            <h3>Web Development</h3>
-                            <p>From static sites to dynamic, responsive web applications, I create high-quality websites that enhance user experience and engagement.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-mobile2"></i></span>
-                            <h3>Mobile Apps</h3>
-                            <p>Developing mobile applications using Ionic or Android Studio for both iOS and Android, designed to be intuitive and performant.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-pencil"></i></span>
-                            <h3>UI/UX Design</h3>
-                            <p>Creating intuitive, user-focused interfaces that simplify navigation and improve user satisfaction across web and mobile platforms.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-film"></i></span>
-                            <h3>Video Editing</h3>
-                            <p>Professional video editing using Adobe Premiere Pro to produce polished content for marketing, tutorials, or personal projects.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-camera"></i></span>
-                            <h3>Photography</h3>
-                            <p>Photo editing and enhancement using Adobe Photoshop to create visually compelling images for digital or print use.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="services animate-box">
-                            <span><i class="icon-briefcase"></i></span>
-                            <h3>Graphic Design</h3>
-                            <p>Logo, branding, and card design to strengthen your brand identity and create a professional image for your business.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <span> <a href="#">cheshirecallum@gmail.com</a></span>
+      <span> <a href="tel://+12345678910"><i class="icon-mobile3"></i> 07815775901</a></span>
     </div>
+  </div>
+  <!-- end:top -->
+  <header id="fh5co-header-section">
+    <div class="container">
+      <div class="nav-header">
+        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+        <h1 id="fh5co-logo"><a href="index.html">Callum Cheshire Portfolio</a></h1>
+      <nav id="fh5co-menu-wrap" role="navigation">
+        <ul class="sf-menu" id="fh5co-primary-menu">
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </header>
 </div>
 
+<div class="fh5co-hero">
+  <div class="fh5co-overlay"></div>
+  <div class="fh5co-cover text-center" style="background-image: url(images/coding.jpg);">
+    <div class="desc animate-box">
+      <h2>Callum Cheshire</h2>
+      <span>An aspiring web developer who has a passion for coding</span>
+    </div>
+  </div>
+</div>
+<!-- end:header-top -->
 
-		<!-- fh5co-services-section -->
-		<div id="fh5co-content-section">
-				<h2 style="text-align: center;"> What Others Think</h2>
-			<div class="container">
-				<div class="row">
-						
-					<div class="col-md-6 col-sm-6">
-						<div class="fh5co-testimonial text-center animate-box">
-							
-							<figure>
-								<img src="images/user-1.jpg" alt="user">
-							</figure>
-							<blockquote>
-									<p>Callum Cheshire worked with me and listened to my requirements to create my new mobile friendly website. As a professional web designer, he delivered with attention to detail  and with my images fully optimised and with great customer service!, highly recommended.</p>							</blockquote>
-							<span>Ross Cheshire, RossCo Rides.</span>
-						</div>
-					</div>
-						<div class="fh5co-testimonial text-center animate-box">
-							<figure>
-								<img src="images/agent2.jpg" alt="user">
-							</figure>
-							<blockquote>
-									<p>Callum Cheshire proved to be an excellent web designer. He developed all aspects of our digital profile. The website appeared as the top Google search in its category. This was thanks to his excellent support and delivery.</p>							</blockquote>
-							<span>Jade Williams, ABC Inc.</span>
-							</div>	
-				</div>
-			</div>
-		</div>
-		<div id="fh5co-blog-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-sm-12 animate-box">
-							<h3 class="heading-section">Latest from Blog</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and </p>
-						</div>
-						<div class="col-lg-9 col-sm-12">
-							<div class="row">
-								<div class="col-lg-4 col-md-4">
-									<div class="fh5co-blog animate-box" style="background-image: url(images/blog-1.jpg);">
-										<a class="image-popup" href="#">
-											<div class="prod-title">
-													<span>Breaking News</span>
-												<h3>Web Development 2020</h3>
-												<p>Everything you need to know about web development in 2020!</p>
-											</div>
-										</a> 
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4">
-									<div class="fh5co-blog animate-box" style="background-image: url(images/blog-3.jpg);">
-										<a class="image-popup" href="#">
-											<div class="prod-title">
-												<span>Breaking News</span>
-												<h3>Portfolio launch day!</h3>
-												<p>On the 5th of December Callum Cheshire's portfolio was updated!.</p>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-						</div>
-						<div class="col-md-6">
-							<ul class="footer-menu">
-								<li class="active">
-									<a href="index.html">Home</a>
-								</li>
-								<li>
-									<a href="portfolio.html">Portfolio</a>
-								</li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<!-- END fh5co-page -->
+<!-- Updated Featured Projects Section -->
+<!-- Featured Projects Section -->
+<div id="fh5co-work-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 animate-box">
+        <h3 class="heading-section">Featured Projects</h3>
+        <p>Some of my best work</p>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
 
-	</div>
-	<!-- END fh5co-wrapper -->
+          <!-- Project 1 -->
+          <div class="col-md-6 col-sm-6 animate-box mb-4">
+            <div class="fh5co-grid" style="background-image: url(images/logo-bg.jpg); height: 300px; background-size: cover; background-position: center;">
+              <a class="overlay-link" href="https://majesticspiral.github.io/BarberShopSFTW/" target="_blank">
+                <div class="prod-title text-center">
+                  <h3>S.F.T.W</h3>
+                  <span>Barber Shop</span>
+                  <div class="overlay-btn">View Project</div>
+                </div>
+              </a>
+            </div>
+          </div>
 
-	<!-- jQuery -->
+          <!-- Project 2 -->
+          <div class="col-md-6 col-sm-6 animate-box mb-4">
+            <div class="fh5co-grid" style="background-image: url(images/DrunkenBunkerLarge.jpg); height: 300px; background-size: cover; background-position: center;">
+              <a class="overlay-link" href="https://majesticspiral.github.io/DrunkenBunkerRestaurant/index.html" target="_blank">
+                <div class="prod-title text-center">
+                  <h3>Drunken Bunker</h3>
+                  <span>Cocktail & Food restaurant</span>
+                  <div class="overlay-btn">View Project</div>
+                </div>
+              </a>
+            </div>
+          </div>
 
+          <!-- Project 3 -->
+          <div class="col-md-6 col-sm-6 animate-box mb-4">
+            <div class="fh5co-grid" style="background-image: url(images/finesse.jpg); height: 300px; background-size: cover; background-position: center;">
+              <a class="overlay-link" href="https://majesticspiral.github.io/Finesse/index.html" target="_blank">
+                <div class="prod-title text-center">
+                  <h3>Finesse Worktops</h3>
+                  <span>Worktops & Decors</span>
+                  <div class="overlay-btn">View Project</div>
+                </div>
+              </a>
+            </div>
+          </div>
 
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Superfish -->
-	<script src="js/hoverIntent.js"></script>
-	<script src="js/superfish.js"></script>
+          <!-- Project 4 -->
+          <div class="col-md-6 col-sm-6 animate-box mb-4">
+            <div class="fh5co-grid" style="background-image: url(images/studioworktops.png); height: 300px; background-size: cover; background-position: center;">
+              <a class="overlay-link" href="https://majesticspiral.github.io/Studioworktops/" target="_blank">
+                <div class="prod-title text-center">
+                  <h3>Studio Worktops</h3>
+                  <span>Decor Samples & Designs</span>
+                  <div class="overlay-btn">View Project</div>
+                </div>
+              </a>
+            </div>
+          </div>
 
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-	</body>
+<!-- end Featured Projects -->
+
+<!-- Services Section -->
+<div id="fh5co-services-section" class="border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 animate-box">
+        <h3 class="heading-section">What I can offer</h3>
+        <p>Take a look at what I can offer you </p>
+      </div>
+      <div class="col-md-9 col-sm-12">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="services animate-box">
+              <span><i class="icon-browser"></i></span>
+              <h3>Web Development</h3>
+              <p>From static pages to more dynamic and responsive websites, I will develop top quality sites at your request.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="services animate-box">
+              <span><i class="icon-mobile"></i></span>
+              <h3>Mobile Apps</h3>
+              <p>Need a mobile application? I'm your guy I can develop mobile apps using the Ionic framework or in android studio, both for IOS and Android.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="services animate-box">
+              <span><i class="icon-tools"></i></span>
+              <h3>UX/UIDesign</h3>
+              <P>A website's layout is important, I can bring you intuitive UX design that makes it easier for clients to navigate your website/application.
+              </P>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="services animate-box">
+              <span><i class="icon-video"></i></span>
+              <h3>Video Editing</h3>
+              <p>Aside from web development I provide video editing services, mainly using Adobe Premiere Pro so if you need any videos editing feel free to contact me.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="services animate-box">
+              <span><i class="icon-camera"></i></span>
+              <h3>Photography</h3>
+              <p>Photo editing using Adobe Photoshop</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="services animate-box">
+              <span><i class="icon-pencil"></i></span>
+              <h3>Graphic Design</h3>
+              <p>Logo design and card design to help improve your brand!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<div id="fh5co-content-section">
+  <h2 style="text-align: center;"> What Others Think</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="fh5co-testimonial text-center animate-box">
+          <figure>
+            <img src="images/user-1.jpg" alt="user">
+          </figure>
+          <blockquote>
+            <p>Callum Cheshire worked with me and listened to my requirements to create my new mobile friendly website. As a professional web designer, he delivered with attention to detail  and with my images fully optimised and with great customer service!, highly recommended.</p>
+          </blockquote>
+          <span>Ross Cheshire, RossCo Rides.</span>
+        </div>
+      </div>
+      <div class="fh5co-testimonial text-center animate-box col-md-6 col-sm-6">
+        <figure>
+          <img src="images/agent2.jpg" alt="user">
+        </figure>
+        <blockquote>
+          <p>Callum Cheshire proved to be an excellent web designer. He developed all aspects of our digital profile. The website appeared as the top Google search in its category. This was thanks to his excellent support and delivery.</p>
+        </blockquote>
+        <span>Jade Williams, ABC Inc.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blog Section -->
+<div id="fh5co-blog-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12 animate-box">
+        <h3 class="heading-section">Latest from Blog</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and </p>
+      </div>
+      <div class="col-lg-9 col-sm-12">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="fh5co-blog animate-box" style="background-image: url(images/blog-1.jpg);">
+              <a class="image-popup" href="#">
+                <div class="prod-title">
+                  <span>Breaking News</span>
+                  <h3>Web Development 2020</h3>
+                  <p>Everything you need to know about web development in 2020!</p>
+                </div>
+              </a> 
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="fh5co-blog animate-box" style="background-image: url(images/blog-3.jpg);">
+              <a class="image-popup" href="#">
+                <div class="prod-title">
+                  <span>Breaking News</span>
+                  <h3>Portfolio launch day!</h3>
+                  <p>On the 5th of December Callum Cheshire's portfolio was updated!.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+          <ul class="footer-menu">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<!-- END fh5co-page -->
+
+</div>
+<!-- END fh5co-wrapper -->
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>
-
